@@ -1,0 +1,60 @@
+#add-item {
+	display: inline-block;
+}
+
+main label {
+	display: inline-block;
+	width: 5em;
+	margin-right: 2em;
+	text-align: right;
+}
+
+main label::after {
+	content: ":";
+}
+
+main input[type="text"] {
+	display: inline-block;
+	width: 30em;
+}
+
+main input[type="button"] {
+	display: inline-block;
+	width: 7em;
+	margin-right: 1em;
+}
+
+footer {
+	border-top: 2px solid black;
+	font-size: smaller;
+}
+
+.task {
+	display: inline-block;
+	border-radius: 0.5em;
+	border: 1px solid black;
+	padding: 1.25em 2em;
+	margin: 0.5em;
+}
+
+.task h2, .task p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.incomplete {
+	background-color: palegoldenrod;
+}
+
+.incomplete:hover {
+	background-color: yellow;
+}
+
+.complete {
+	opacity: 35%;
+	background-color: lightgreen;
+}
+
+.complete:hover {
+	background-color: greenyellow;
+}
