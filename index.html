@@ -12,38 +12,17 @@
 		<h1>Task Tracker</h1>
 		<main>
 			<div id="add-item">
-				<label for="task-name">Task</label><input id="task-name" type="text"><br><br>
-				<label for="desc">Description</label><input id="desc" type="text"><br><br>
+				<label for="task-name">Task</label><input id="task-name" type="text"><span id="name-err" class="err"></span><br><br>
+				<label for="desc">Description</label><input id="desc" type="text"><span id="desc-err" class="err"></span><br><br>
 				<input id="clear-btn" type="button" value="Clear">
 				<input id="add-btn" type="button" value="Add Task">
 			</div>
+			<p>Click on a task to mark it as complete; click it again to mark it as incomplete.</p>
 			<h1>TODO:</h1>
-			<div id="incomplete-items">
-				<div class="task incomplete">
-					<h2>Incomplete Example Task</h3>
-					<p>Example description</p>
-				</div>
-				<div class="task incomplete">
-					<h2>Incomplete Example Task</h3>
-					<p>Example description</p>
-				</div>
-				<div class="task incomplete">
-					<h2>Incomplete Example Task</h3>
-					<p>Example description</p>
-				</div>
-				<div class="task incomplete">
-					<h2>Incomplete Example Task</h3>
-					<p>Example description</p>
-				</div>
-			</div>
+			<div id="incomplete-items"></div>
 			<br>
 			<h1>Completed</h1>
-			<div id="completed-items">
-				<div class="task complete">
-					<h2>Completed Example Task</h3>
-					<p>Example description</p>
-				</div>
-			</div>
+			<div id="completed-items"></div>
 		</main>
 		<footer>&copy; Preston Haman 2022</footer>
 	</body>

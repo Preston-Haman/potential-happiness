@@ -24,9 +24,9 @@ main input[type="button"] {
 	margin-right: 1em;
 }
 
-footer {
-	border-top: 2px solid black;
-	font-size: smaller;
+.err {
+	color: red;
+	padding-left: 0.25em;
 }
 
 .task {
@@ -57,4 +57,9 @@ footer {
 
 .complete:hover {
 	background-color: greenyellow;
+}
+
+footer {
+	border-top: 2px solid black;
+	font-size: smaller;
 }
