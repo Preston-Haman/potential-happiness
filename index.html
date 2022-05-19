@@ -4,10 +4,26 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Homepage</title>
+		<link rel="stylesheet" href="style/site.css">
+		<script src="js/todo.js"></script>
+		<title>Task Tracker</title>
 	</head>
 	<body>
-		<h1>Welcome to GitHub Pages</h1>
-		<p>I may eventually do something with this webpage; but that time isn't now. Please check back later.</p>
+		<h1>Task Tracker</h1>
+		<main>
+			<div id="add-item">
+				<label for="task-name">Task</label><input id="task-name" type="text"><span id="name-err" class="err"></span><br><br>
+				<label for="desc">Description</label><input id="desc" type="text"><span id="desc-err" class="err"></span><br><br>
+				<input id="clear-btn" type="button" value="Clear">
+				<input id="add-btn" type="button" value="Add Task">
+			</div>
+			<p>Click on a task to mark it as complete; click it again to mark it as incomplete.</p>
+			<h1>TODO:</h1>
+			<div id="incomplete-items"></div>
+			<br>
+			<h1>Completed</h1>
+			<div id="completed-items"></div>
+		</main>
+		<footer>&copy; Preston Haman 2022</footer>
 	</body>
 </html>
